@@ -1,0 +1,445 @@
+//Q1:Write a program that allows the user to insert an integer then print negative if it is a negative number otherwise print positive.
+
+/*#include<iostream>
+
+using namespace std;
+
+
+int main ()
+{
+int num ;
+cout<<"Please Enter a number : ";
+cin>>num;
+if (num<0)
+    {
+      cout<<"neg";
+    }
+else if (num>0)
+    {
+      cout<<"pos";
+    }
+else if (num==0)
+    {
+     cout<<"number is zero";
+    }
+
+
+}*/
+
+//Q2 :2. Write a program to read any digit from 1 to 5, display it as a word
+//#include<iostream>
+//using namespace std ;
+//
+//int main ()
+//{
+//int num ;
+//cout<<"Enter a number : ";
+//cin>>num;
+//
+//switch(num)
+//{
+//    case 1 : cout<<"one";
+//             break;
+//    case 2 : cout<<"two";
+//             break;
+//    case 3 : cout<<"three";
+//             break;
+//    case 4 : cout<<"four";
+//             break;
+//    case 5 : cout<<"five";
+//             break;
+//    default:cout<<"not found " ;
+//}
+//
+//}
+//Q3:Write a program that reads 5 numbers and sum of all odd values between them
+//#include<iostream>
+//using namespace std;
+//
+//int main()
+//{
+//int num , sum = 0 ;
+//
+//
+//int i ;
+//for(i=1 ; i<=5;i++)
+//    {
+//      cout<<"please enter a number : ";
+//      cin>> num ;
+//      if (num%2==1)
+//        {
+//          sum+=num;
+//        }
+//    }
+//   cout<<"the sum = "<< sum ;
+//}
+//Q4:Write a program that reads a year then check if a year is a leap year or not:
+//
+//#include<iostream>
+//
+//using namespace std ;
+
+//int main ()
+//{
+//int year ;
+//cout <<"Please Enter a year:";
+//cin>> year ;
+//if (year%4==0||year%400==0)
+//    {
+//      cout<<"leap year";
+//    }
+//else
+//    {
+//        cout<<"not leap year";
+//    }
+//
+//}
+//Q5 : take the birth year and check if he is above 18 or not :
+
+//#include<iostream>
+//using namespace std ;
+//int main()
+//{
+//int birth_year , age ;
+//cout << "please enter your birthyear :" ;
+//cin>>birth_year;
+//age = 2024 - birth_year ;
+//if (age>=18)
+//    {
+//     cout<<"above 18";
+//    }
+//else
+//    {
+//      cout<<"not above 18";
+//    }
+//}
+//Q6:Ask the user to enter marks and print the corresponding grade.
+/*#include<iostream>
+
+using namespace std ;
+
+int main ()
+{
+int grade ;
+cout <<"Enter a grade : " ;
+cin>>grade ;
+if (grade < 25 )
+    {
+        cout<< "F";
+    }
+else if (grade >= 25 && grade < 45 )
+    {
+        cout<< "E";
+
+    }
+else if (grade >= 45 && grade < 50 )
+    {
+        cout<< "D";
+
+    }
+else if (grade >= 50 && grade < 60 )
+    {
+        cout<< "C";
+
+    }
+else if (grade >= 60 && grade < 80 )
+    {
+        cout<< "B";
+
+    }
+else if (grade >= 80 )
+    {
+        cout<< "A";
+
+    }
+}*/
+
+//Q7:Search for Switch Case and use it to write a program that reads an integer between 1 and 12 and print the month of the year in English.
+/*#include<iostream>
+
+using namespace std ;
+
+int main ()
+{
+int month ;
+cout<< "Enter month number : ";
+cin>>month;
+switch (month)
+{
+    case 1 : cout<<"january";
+             break ;
+    case 2 : cout<<"february";
+             break ;
+    case 3 : cout<<"march";
+             break ;
+    case 4 : cout<<"April";
+             break ;
+    case 5 : cout<<"May";
+             break ;
+    case 6 : cout<<"june";
+             break ;
+    case 7 : cout<<"july";
+             break ;
+    case 8 : cout<<"August";
+             break ;
+    case 9 : cout<<"september";
+             break ;
+    case 10 : cout<<"October";
+             break ;
+    case 11 : cout<<"November";
+             break ;
+    case 12 : cout<<"December";
+             break ;
+    default: cout << "Error";
+
+}
+//Q8:Search for ternary operator and use it to write a program that allows the user to insert integer number then Even or Odd
+/*#include<iostream>
+
+using namespace std ;
+
+int main ()
+{
+int number ;
+cout<< "Enter a number : ";
+cin>>number;
+number%2==0? cout<<"even" :cout<<"odd";
+}*/
+
+//Q9:-Write a program that take character from user then if it is vowel chars (a,e,I,o,u)
+//#include<iostream>
+//#include <cctype>
+//using namespace std ;
+//
+//int main ()
+//{
+//char letter ;
+//cout<< "Enter a character : ";
+//cin>>letter;
+//letter = tolower(letter);
+//if (letter == 'a' || letter == 'e' || letter == 'o' || letter == 'u' || letter =='i' )
+//    {
+//      cout<< "vowel";
+//    }
+//else
+//    {
+//      cout<<"consonant";
+//    }
+//
+//
+//}
+
+
+//Q10:Write a program that take 3 integer from user then print the max element and the min element
+//#include<iostream>
+//using namespace std ;
+//
+//int main ()
+//{
+//int first , second , third ;
+//cout<< "Enter 3 numbers : ";
+//cin>>first>>second>>third  ;
+//
+//if (first>second)
+//    {
+//      if (first > third)
+//        {
+//          cout<< "max = "<<first<<endl;
+//          if (second>third)
+//            {
+//            cout<< "min ="<<third<<endl ;
+//            }
+//          else
+//            {
+//                cout<< "min ="<<second<<endl ;
+//            }
+//        }
+//
+//      else
+//        {
+//        cout<< "max ="<<third<<endl ;
+//        cout<< "min ="<<second<<endl ;
+//        }
+//    }
+// else
+//    {
+//      if (second>third)
+//        {
+//        cout<< "max = "<<second<<endl;
+//            if (first>third)
+//            {
+//            cout<< "min ="<<third<<endl ;
+//            }
+//            else
+//                {
+//                  cout<< "min ="<<first<<endl;
+//                }
+//
+//        }
+//      else
+//        {
+//            cout<< "max = "<<third<<endl;
+//            cout<< "min = "<<first<<endl;
+//
+//        }
+//    }
+//
+//    }
+
+//Q11:Write a program that print from 10 to 1
+//#include<iostream>
+//using namespace std ;
+//
+//int main ()
+//{
+// int i ;
+// for (i = 10 ; i>=1;i-- )
+//    {
+//      if(i==9)
+//        {
+//            continue;
+//        }
+//      cout<< i << " ";
+//    }
+//
+//}
+//Q12:Write a program to read 10 numbers from the user then print the average.
+//#include<iostream>
+//using namespace std ;
+//
+//int main ()
+//{
+// int num , sum = 0 , i ;
+// for (i = 1 ; i <=10 ; i++  )
+//    {
+//      cout<<"please enter number " << i <<" = ";
+//      cin>> num ;
+//      sum+=num;
+//    }
+//    cout<<"the avg = " << sum / 10.0 ;
+//
+//}
+
+//Q13:Write a program i to display the multiplication table of a given integer
+//#include<iostream>
+//using namespace std ;
+//int main ()
+//{
+//int num  ;
+//cout<<"Enter an integer : ";
+//cin>>num;
+//int i ;
+//for (i=1;i<=12;i++)
+//    {
+//     cout<< num<<" * "<<i <<" = "<<num*i<<endl;
+//    }
+//
+//}
+
+//Q14:Write a program that allows the user to insert two integers N and M and print the
+//summation of all numbers between N and M.
+
+//#include<iostream>
+//using namespace std ;
+//
+
+//int main ()
+//{
+//int n , m , sum = 0 ;
+//cout<<"Enter least number : " ;
+//cin>> n ;
+//cout<<"Enter most number : " ;
+//cin>> m ;
+//int i ;
+//for (i = n ; i <=m ; i++)
+//    {
+//      sum += i ;
+//    }
+//    cout<<"sum = " << sum ;
+//
+//}
+
+
+//Q15:Write a program to find the power of a
+//number.
+//
+//#include<iostream>
+//using namespace std ;
+//
+//int main ()
+//{
+//int input_base , input_exp , mult = 1;
+//cout<<"please enter input_base : ";
+//cin>>input_base;
+//cout<<"please enter input_exp:";
+//cin>>input_exp;
+//int i ;
+//for (i=1;i<=input_exp;i++)
+//    {
+//     mult*=input_base;
+//    }
+//   cout<<input_base<<"^"<<input_exp << " = "<<mult;
+//}
+
+
+//Q16:Write a program to take 10 numbers from the user and count the odd numbers
+//#include<iostream>
+//using namespace std ;
+//
+//int main()
+//{
+//int num ,i, Count=0 ;
+//for (i=1;i<=10;i++)
+//    {
+//      cout<<"please enter number "<< i<<" = " ;
+//      cin>>num ;
+//      if (num%2==1)
+//        {
+//         Count++;
+//        }
+//    }
+//    cout<<"odd count = " <<Count;
+//
+//return 0 ;
+//}
+
+//Q17:Write a program to take 2 integers from the user and find the Greatest Common Divisor of two numbers.
+
+
+//#include<iostream>
+//using namespace std ;
+//
+//int main ()
+//{
+//int max_num = 1;
+//int n , m ;
+//cout<<"please enter two numbers : ";
+//cin>> n ;
+//cin>>m ;
+//if (n>m)
+//    {
+//      for (int i = 1 ; i<=m ; i++ )
+//        {
+//          if(n%i==0&&m%i==0)
+//            {
+//              max_num = i ;
+//            }
+//        }
+//
+//    }
+//else
+//    {
+//     for (int i = 1 ; i<=n ; i++ )
+//        {
+//          if(n%i==0&&m%i==0)
+//            {
+//              max_num = i ;
+//            }
+//        }
+//
+//
+//    }
+//cout<<"max_divisor = " << max_num;
+
+//}
+
