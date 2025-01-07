@@ -1,0 +1,39 @@
+#include<iostream>
+
+using namespace std ;
+int great_divisor(int a , int b )
+{
+    int temp ;
+while (b!= 0 )
+    {
+     temp = b ;
+     b = a % b ;
+     a = temp ;
+    }
+    return a ;
+}
+int main ()
+{
+ int n , m ,z , lcm , counter = 0 ;
+ cin>>n>>m>>z; 
+ if (m%n == 0)
+    {
+      lcm = m ;
+    }
+
+  else if (n%m == 0)
+    {
+      lcm = n ;
+    }
+    else
+        {
+         lcm = m*n / great_divisor(m , n );
+        }
+      for (int i = 1 ; i <=z ; i++) //
+        {
+           if (lcm*i <= z)
+           counter++;
+        }
+    cout<<counter;
+
+}
