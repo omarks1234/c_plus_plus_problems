@@ -1,0 +1,25 @@
+class Solution {
+public:
+    int findNumbers(vector<int>& nums) {
+        int i , counter_1 = 0 , counter_2 = 0 , number  ;
+        for(i = 0 ; i <nums.size() ; i++)
+        {
+          number = nums[i];
+          while(number!=0)
+          { 
+             counter_1++;
+             number/=10 ; 
+
+          }
+          if (counter_1%2==0&&nums[i]!=0)
+          {
+
+            counter_2++ ; 
+          }
+          counter_1=0 ; 
+
+
+        }
+        return counter_2 ; 
+    }
+};
